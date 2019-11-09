@@ -22,8 +22,8 @@
             echo "<tr>";
             echo "<td>" . $row['description'] . "</td>";
             echo "</tr>";
-            echo '</tr>';
             echo "</table>";
+            echo '</tr>';
         }
     ?>
 </table>

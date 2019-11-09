@@ -55,6 +55,15 @@
         foreach ($params as $p) {
             $vars[] = $p;
         }
+
+        // if (isset($_GET['cmd'])) {
+        //     $vars['cmd'] = $_GET['cmd'];
+        // }
+
+        // Need for REST calls
+        if (isset($_GET['id'])) {
+            $vars['id'] = $_GET['id'];
+        }
     }
 
     $controllerfile = $page . ($subpage != "" ? "_" . $subpage : "");

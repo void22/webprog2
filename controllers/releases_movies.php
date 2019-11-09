@@ -19,7 +19,6 @@
             }
             catch (SoapFault $e) {
                 echo $client->__getLastResponse();
-                //var_dump($e);
             } 
         }
     }
