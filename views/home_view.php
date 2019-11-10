@@ -1,5 +1,5 @@
-<h2>
-    <br>Üdvözöljük az új rendszerünkben!<br>
-    <br>Jó munkát kívánunk a rendszerünkkel!<br>
-    <br>Kezdhet ...<br>
-</h2>
+<h3>
+    <br>Ezen az oldalon mozipremierekről és DVD megjelenésekről kaphat bővebb információkat.<br>
+    <br>A "Megjelenések" menüpontban összesítve, de külön-külön is megtekintheti a megjelenés előtt álló filmek információit<br>
+    <br>A vendégkönyvben leírhatja véleményét, melyet egy gyors regisztráció után érhet el. A regisztráció a "Belépés" menüben található.<br>
+</h3>

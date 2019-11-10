@@ -20,8 +20,7 @@
                     case 1:
                         $retData['eredmeny'] = "OK";
                         $retData['uzenet'] = "Kedves ".$felhasznalo[0]['lastname']." ".$felhasznalo[0]['firstname']."!<br><br>
-                                              Jó munkát kívánunk rendszerünkkel.<br><br>
-                                              Az üzemeltetők";
+                                              Köszöntjük Önt a filmpremierek oldalán.<br><br>";
                         $_SESSION['wp2uid'] =  $felhasznalo[0]['id'];
                         $_SESSION['wp2lastname'] =  $felhasznalo[0]['lastname'];
                         $_SESSION['wp2firstname'] =  $felhasznalo[0]['firstname'];

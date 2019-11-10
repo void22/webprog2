@@ -1,32 +1,25 @@
-<h2>
-    <br>Ide jönnek a filmpremier adatok SOAP-on keresztül...<br>
-</h2>
 <table>
-    <tr>
-        <th>Bemutató</th>
-        <th>Cím</th>
-        <th>Megjelenés</th>
-        <th>Rendező</th>
-        <th>Szereplők</th>
-        <th>Korhatár</th>
-    </tr>
     <?php
         for ($i=0; $i < count($viewData['releases']); $i++) {
             $row = $viewData['releases'][$i];
 
             echo "<tr>";
-            echo "<td>" . ($row['type'] == 0 ? "Mozifilm" : "DVD") . "</td>";
-            echo "<td>" . $row['title'] . "</td>";
-            echo "<td>" . date("Y/m/d", strtotime($row['release_date'])) . "</td>";
-            echo "<td>" . $row['directors'] . "</td>";
-            echo "<td>" . $row['actors'] . "</td>";
-            echo "<td>" . $row['rating'] . "</td>";
-            echo "<table>";
-            echo "<tr>";
+            echo "<td style=\"width:250px\">";
+            echo "<strong>Bemutató</strong><br>";
+            echo ($row['type'] == 0 ? "Mozifilm" : "DVD") . "<br><br>";
+            echo "<strong>Cím</strong><br>";
+            echo $row['title'] . "<br><br>";
+            echo "<strong>Megjelenés</strong><br>";
+            echo date("Y/m/d", strtotime($row['release_date'])) . "<br><br>";
+            echo "<strong>Rendező</strong><br>";
+            echo $row['directors'] . "<br><br>";
+            echo "<strong>Szereplők</strong><br>";
+            echo $row['actors'] . "<br><br>";
+            echo "<strong>Korhatár</strong><br>";
+            echo $row['rating'] . "<br><br>";
+            echo "</td>";
             echo "<td>" . $row['description'] . "</td>";
             echo "</tr>";
-            echo '</tr>';
-            echo "</table>";
         }
     ?>
 </table>

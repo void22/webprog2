@@ -1,6 +1,6 @@
 $("#rating").on("change mousemove", function() {
     var input = $(this);
-    input.next("span").text(input.val() + " év");
+    $("#ratingtext").text(input.val() + " év");
 });
 
 $("#upload").click(function() {

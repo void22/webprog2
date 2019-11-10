@@ -1,5 +1,6 @@
-<h2>Bejegyzés szerkesztése</h2>
+<br>
 <div>
+    <h2>Bejegyzés szerkesztése</h2>
     <a href="<?= SITE_ROOT ?>guestbook">Vissza a vendégkönyvhöz...</a>
 </div>
 <br />
@@ -10,8 +11,10 @@
 <form action="<?= SITE_ROOT ?>guestbookoperations" method="post">
     <div>
         <input type="hidden" name="id" id="id" value="<?= $data->id ?>" />
-        <label for="content">Hozzászólás</label>
-        <textarea name="content" id="content" required><?= $data->content ?></textarea>
+        <div class="block">
+            <label for="content">Hozzászólás</label>
+            <textarea name="content" id="content" required><?= $data->content ?></textarea>
+        </div>
     </div>
     <br />
     <input type="submit" name="update" value="Küldés" />
